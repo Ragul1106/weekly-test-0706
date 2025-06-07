@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BsArrowUp } from "react-icons/bs";
-import "../App.css"; // Make sure this is imported!
+import "../App.css"; 
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
