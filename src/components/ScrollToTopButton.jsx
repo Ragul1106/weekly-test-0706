@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BsArrowUp } from "react-icons/bs";
+import "../assets/css/scrolling.css"
 import "../App.css"; 
 
 const ScrollToTopButton = () => {
