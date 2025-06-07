@@ -1,0 +1,34 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #6610f2, #d63384);
+  color: white;
+  border: none;
+  padding: 15px 18px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(102, 16, 242, 0.5);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  box-shadow: 0 0 25px rgba(214, 51, 132, 0.9);
+  transform: scale(1.1);
+}
+
+.fade-in {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

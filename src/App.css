@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #6610f2, #d63384);
+  color: white;
+  border: none;
+  padding: 15px 18px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(102, 16, 242, 0.5);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  box-shadow: 0 0 25px rgba(214, 51, 132, 0.9);
+  transform: scale(1.1);
+}
+
+.fade-in {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.todo-input:focus {
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+  border-color: #0d6efd;
+  transition: 0.2s ease-in-out;
+}
+
+.todo-filter-btn.active {
+  background-color: #0d6efd;
+  color: white;
+  font-weight: 500;
+}
+
+.task-text:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .todo-container {
+    padding: 1rem !important;
+  }
+
+  .todo-input,
+  .todo-add-btn {
+    font-size: 1rem;
+  }
+
+  .scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 14px;
+    font-size: 1rem;
+  }
+
+  .btn-group > .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .list-group-item {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.5rem;
+  }
+
+  .list-group-item .btn {
+    width: 100%;
+    margin-top: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .todo-container {
+    padding: 0.8rem !important;
+  }
+
+  .scroll-to-top {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .todo-input {
+    font-size: 0.9rem;
+  }
+
+  .btn-group > .btn {
+    font-size: 0.85rem;
+  }
+}
